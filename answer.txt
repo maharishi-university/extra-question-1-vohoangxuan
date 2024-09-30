@@ -1,0 +1,10 @@
+int[] addUpToTarget(int[] intArray, int target) {
+
+    for(int i = 0; i < intArray.length; i++) {
+        for(int j = i + 1; j < intArray.length; j++) {
+            if (intArray[i] + intArray[j] == taget)
+                return new int[]{i, j]};
+        }
+    }
+    return new int[]{-1, -1};
+}
